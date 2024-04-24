@@ -1,0 +1,89 @@
+html{
+    background-color: aqua;
+    overflow-x: hidden;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.content{
+    width: 50%;
+}
+
+.txt1{
+    background-color: #bcb9b9;
+}
+.txt2{
+    background-color: bisque;
+}
+
+h1{
+    font-size: 60px;
+}
+
+.a{
+    font-size: 40px;
+}
+
+#das{
+    color: red;
+    font-size: 80px;
+    animation: abc 5s linear infinite;
+}
+
+@keyframes abc{
+    from{
+        transform: rotate(0);
+        margin-left: 100px;
+    }
+
+    50%{
+        transform: rotate(360deg);
+        margin-right: 150px;
+    }
+
+    to{
+        transform: rotate(0);
+        margin-left: 100px;
+    }
+}
+
+#box,#box2{
+    margin-left: 3%;
+    font-size: 30px;
+    height: 30px;
+    width: 20%;
+}
+
+#texts{
+    font-size: 30px;
+    margin-bottom: 200px;
+}
+
+.car{
+    display: block !important;
+    width: 500px;
+    position: absolute;
+    top: 250px;
+    right: 0;
+    transform: translateX(100%);
+}
+.cars{
+    animation: anime 5s linear;
+}
+
+@keyframes anime{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-200vh);
+    }
+}
+
+.tit{
+    font-size: 100px;
+    letter-spacing: 9px;
+}

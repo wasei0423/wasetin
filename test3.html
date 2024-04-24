@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test3.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content txt1">
+            <h1>HTML</h1>
+            <p id="texts">＜ｐ　ｃｌａｓｓ＝”ｔeｘｔ”＞▲●□＜／ｐ＞</p>
+
+<div style="display: flex; ">
+                <div style="width: 50%;background-color: rgb(163, 242, 221);">
+                    <h2>実行結果</h2>
+                    <span id="text">▲●□</span>
+                </div>
+                <div style="background-color: rgb(230, 255, 67);width: 50%;height: 660px;">
+                    <h2 >正解</h2>
+                    <p id="das">▲●□</p>
+                </div>
+</div>
+        </div>
+        <div class="content txt2">
+            <h1>CSS</h1>
+            <p class="a">.text｛</p>
+            <div style="display: flex; align-items: center;">
+                <p style="font-size: 30px;">color:</p>
+                <input type="text" id="box">
+                <p style="font-size: 30px;">;</p>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <p style="font-size: 30px;">font-size:</p>
+                <input type="text" id="box2">
+                <p style="font-size: 30px;">;</p>
+            </div>
+            <p class="a">｝</p>
+        </div>
+    </div>
+
+    <img src="../myimg/cars.jpg" id="photo" class="car">
+
+    <p class="tit">ちょくちょくCSS掻き消すハイエース</p>
+</body>
+
+<script>
+    const span=document.getElementById("text");
+
+    var val=document.getElementById("box");
+    var val2=document.getElementById("box2");
+    const change=()=>{
+        var val=document.getElementById("box");
+        var val2=document.getElementById("box2");
+        span.style.color = val.value;
+        span.style.fontSize = val2.value;
+    }
+    setInterval(change, 6000);
+
+    const caranime=()=>{
+        const cars=document.getElementById("photo");
+        cars.classList.toggle("cars");
+        setTimeout(function(){
+            val.value="";
+            val2.value="";
+        },2000);
+        setTimeout(function(){
+            cars.classList.toggle("cars");
+        },5000);
+    }
+    setInterval(caranime, 20000);
+</script>
+
+</html>
